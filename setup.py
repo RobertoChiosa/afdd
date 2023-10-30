@@ -1,9 +1,16 @@
+from pathlib import Path
+
 from setuptools import setup
+
+this_directory = Path(__file__).parent
+long_description = (this_directory / "README.md").read_text()
 
 setup(
     name='afdd',
     version='0.0.1',
     description='A python package for automated fault detection and diagnosis',
+    long_description=long_description,
+    long_description_content_type='text/markdown',
     url='https://github.com/shuds13/pyexample',
     author='Roberto Chiosa',
     author_email='roberto.chiosa@polito.it',
